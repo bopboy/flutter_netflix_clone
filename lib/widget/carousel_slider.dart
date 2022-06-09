@@ -34,7 +34,7 @@ class _CarouselImageState extends State<CarouselImage> {
           Container(padding: const EdgeInsets.all(20)),
           CarouselSlider(
             items: images,
-            options: CarouselOptions(height: 150.0, autoPlay: true),
+            options: CarouselOptions(height: 150.0, autoPlay: false),
             // onPageChanged: (index) {
             //   setState(() {
             //     _currentPage = index;
