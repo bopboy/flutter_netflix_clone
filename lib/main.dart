@@ -2,8 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_netflix_clone/screen/home_screen.dart';
 import 'package:flutter_netflix_clone/screen/more_screen.dart';
 import 'package:flutter_netflix_clone/widget/bottom_bar.dart';
+import 'package:firebase_core/firebase_core.dart';
+// import 'firebase_options.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(MyApp());
+  // Fire
+  // await Firebase.initializeApp(
+  //   options: DefaultFirebaseOptions.currentPlatform,
+  // );
+  // Firebase
+}
 
 class MyApp extends StatefulWidget {
   @override
